@@ -1,0 +1,152 @@
+/*
+-More symbols: https://www.toptal.com/designers/htmlarrows/currency/
+-Align text according to input.
+*/
+h1 {
+  background-color: #0054dc;
+  height: 40px;
+  margin-top: -12px;
+  margin-left: -15px;
+  margin-right: -15px;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font: bold 35px "Arial";
+}
+body {
+  text-align: center;
+  background-color: #001e4a;
+  width: 100%;
+}
+h3 {
+  color: white;
+  font-size: 25px;
+}
+form{
+  padding: 20px 20px;
+}
+label {
+  color: white;
+  font: normal 19px "";
+  margin-left: -283px;
+}
+
+#email {margin-left: -157px}
+#username {margin-left: -278px}
+
+input {
+  font: normal 20px "";
+  height: 37px;
+  width: 350px;
+  border-style: none;
+  border-color: darkcyan;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+  margin: 8px 8px;
+}
+button {
+  height: 45px;
+  background-color: #0054dc;
+  border-style: solid;
+  border-radius: 7px;
+  outline: none;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 15px;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+
+button::before {
+  content: ' \00bb';
+  opacity: 0
+}
+button::after {
+  content: ' \00bb';
+  opacity: 0;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: #009dff;
+}
+button:active {
+  transform: translateY(2px);
+  transition: 0.25s
+}
+button:hover::after{
+  opacity: 1;
+  padding-right: 12px;
+}
+
+a {
+  color: cyan;
+}
+p {
+  font: normal 20px "";
+  color: white;
+}
+footer {
+  position: fixed;
+  height: 40px;
+  width: 110%;
+  background-color: #0054dc;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  padding-top: 12px;
+  padding-bottom: 37px;
+  bottom: 0;
+  margin-left: -3%;
+}
+
+
+/*
+-Justify is within (text-align).
+-To import a font:
+ @import url("file.css or URL");
+-padding: top right left bottom.
+ If only one is provided, it's for all sides.
+ If two, (top & bottom), (right & left).
+ If three, for top, (right & left), bottom.
+-We can use (#id{}) instead of (tag_name{}).
+-(box-shadow) gives an underline shadow.
+-(.class) means getting class with the same name.
+-<div> element, but <div> is a block-level element and <span> is an inline element.
+
+-When you want to use pseudo-classes like :hover, :first-child etc, use a
+ single colon (:). If you want to use pseudo-elements, like ::before, ::after,
+ ::first-letter, and so on, use double colons.
+
+-The ::after selector inserts something after the content of each selected element(s).
+-Use the content property to specify the content to insert.
+-Use the ::before selector to insert something before the content.
+*/
+
+/*
+------------- Selector Specifity Value --------------
+element                   1
+element.class             11
+element#id                101
+<tag style="color: ...;"> 1000
+#id                       100
+#.class                   10
+element.class1.class2     21
+#navbar element.id        201
+(*) universal selector    0
+element element
+-inline style (1000) is always the highest except when using (!important).
+*/
+
+/*
+Inline   - by using the style attribute inside HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using a <link> element to link to an external CSS file
+*/
+
+/*
+-For specific devics.
+@media all and (max-width: 600px) and (orientation:landscape) {}
+*/

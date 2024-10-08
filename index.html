@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Website</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <script type="text/javascript" src="profile.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to our simple website</h1>
+    <h3 class="p1">Please login or create an account.</h3>
+    <form id="form">
+      <label id="email">Email or phone number</label> <br>
+      <input type="text" name="email/phone" placeholder="example@gmail.com"> <br>
+      <label id="username">Username</label> <br>
+      <input id="name" type="text" name="username" placeholder="Username"> <br />
+      <label id="password">Password</label> <br>
+      <input type="text" name="password" placeholder="Password"> <br />
+      <input type="text" name="password" placeholder="Confirm Password"> <br />
+      <button type="button" name="button" onclick="catchInput()">Sign up</button> <br>
+      <p>Already have an account? <a href="login.html" link="cyan" alink="white" vlink="purple">log in</a> </p>
+    </form>
+  </body>
+  <footer>
+    <p>2024 (c) Didouna Mohyeddine.</p>
+  </footer>
+</html>
+
+<!--
+-(value) atr for an initial value.
+-(name) atr is used in JS.
+-(for) used to link a label to an element using its ID.
+ When used together with the <output> element, the for attribute specifies the
+ relationship between the result of the calculation, and the elements used in the calculation.
+-->
